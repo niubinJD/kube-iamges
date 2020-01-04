@@ -15,6 +15,8 @@ docker pull registry.cn-hangzhou.aliyuncs.com/kube-iamges/coredns:1.6.5 \
 && docker tag registry.cn-hangzhou.aliyuncs.com/kube-iamges/kube-scheduler:v1.17.0 k8s.gcr.io/kube-scheduler:v1.17.0 \
 && docker pull registry.cn-hangzhou.aliyuncs.com/kube-iamges/pause:3.1 \
 && docker tag registry.cn-hangzhou.aliyuncs.com/kube-iamges/pause:3.1 k8s.gcr.io/pause:3.1 \
+&& docker pull registry.cn-hangzhou.aliyuncs.com/kube-iamges/flannel:v0.11.0-amd64 \
+&& docker tag registry.cn-hangzhou.aliyuncs.com/kube-iamges/flannel:v0.11.0-amd64 quay.io/coreos/flannel:v0.11.0-amd64 \
 && docker rmi registry.cn-hangzhou.aliyuncs.com/kube-iamges/coredns:1.6.5 \
 && docker rmi registry.cn-hangzhou.aliyuncs.com/kube-iamges/etcd:3.4.3-0 \
 && docker rmi registry.cn-hangzhou.aliyuncs.com/kube-iamges/kube-apiserver:v1.17.0 \
